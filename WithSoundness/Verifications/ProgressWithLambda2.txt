@@ -1,0 +1,35 @@
+﻿Verifications done on the files : Progress, Interpreter, Typechecker, Expressions, Types and Identifiers, 
+when it contains only ErrorValue, Literals (CharLiteral, IntegerLiteral, BooleanLiteral, StringLiteral and FractionLiteral), Variable, Lambda2 and Application2.
+
+[  Info  ]   ┌───────────────────┐
+[  Info  ] ╔═╡ stainless summary ╞═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+[  Info  ] ║ └───────────────────┘                                                                                                                                 ║
+[  Info  ] ║ areBothBoolean          match exhaustiveness                                          valid  nativez3  src/main/scala/Typechecker.scala:145:17  0.158 ║
+[  Info  ] ║ areBothInt              match exhaustiveness                                          valid  nativez3  src/main/scala/Typechecker.scala:161:17  0.020 ║
+[  Info  ] ║ areBothIntOrReal        match exhaustiveness                                          valid  nativez3  src/main/scala/Typechecker.scala:178:17  0.038 ║
+[  Info  ] ║ areBothIntOrRealOrChar  match exhaustiveness                                          valid  nativez3  src/main/scala/Typechecker.scala:196:17  0.024 ║
+[  Info  ] ║ interpret               match exhaustiveness                                          valid  nativez3  src/main/scala/Interpreter.scala:39:25   0.238 ║
+[  Info  ] ║ isValue                 match exhaustiveness                                          valid  nativez3  src/main/scala/Interpreter.scala:16:17   0.029 ║
+[  Info  ] ║ next                    match exhaustiveness                                          valid  nativez3  src/main/scala/Interpreter.scala:56:17   0.046 ║
+[  Info  ] ║ next                    match exhaustiveness                                          valid  nativez3  src/main/scala/Interpreter.scala:70:66   0.049 ║
+[  Info  ] ║ next                    match exhaustiveness                                          valid  nativez3  src/main/scala/Interpreter.scala:71:73   0.049 ║
+[  Info  ] ║ next                    match exhaustiveness                                          valid  nativez3  src/main/scala/Interpreter.scala:72:69   0.039 ║
+[  Info  ] ║ progress                postcondition                                                 valid  nativez3  src/main/scala/Progress.scala:26:9       0.941 ║
+[  Info  ] ║ progress                match exhaustiveness                                          valid  nativez3  src/main/scala/Progress.scala:28:17      0.253 ║
+[  Info  ] ║ progress                match exhaustiveness                                          valid  nativez3  src/main/scala/Progress.scala:49:33      0.057 ║
+[  Info  ] ║ progress                match exhaustiveness                                          valid  nativez3  src/main/scala/Progress.scala:50:81      0.044 ║
+[  Info  ] ║ progress                match exhaustiveness                                          valid  nativez3  src/main/scala/Progress.scala:51:77      0.066 ║
+[  Info  ] ║ progress                precond. (call check(progress(arg2, t2)))                     valid  nativez3  src/main/scala/Progress.scala:53:67      0.771 ║
+[  Info  ] ║ progress                precond. (call progress(arg2, t2))                            valid  nativez3  src/main/scala/Progress.scala:53:73      1.728 ║
+[  Info  ] ║ progress                precond. (call check(progress(arg1, t1)))                     valid  nativez3  src/main/scala/Progress.scala:55:59      0.691 ║
+[  Info  ] ║ progress                precond. (call progress(arg1, t1))                            valid  nativez3  src/main/scala/Progress.scala:55:65      1.836 ║
+[  Info  ] ║ progress                precond. (call check(res))                                    valid  nativez3  src/main/scala/Progress.scala:60:49      1.094 ║
+[  Info  ] ║ progress                precond. (call progress(callee, FunctionType2(get[Type] ...)  valid  nativez3  src/main/scala/Progress.scala:61:57      1.169 ║
+[  Info  ] ║ progress                precond. (call get[Type](tArg1))                              valid  nativez3  src/main/scala/Progress.scala:61:88      0.621 ║
+[  Info  ] ║ progress                precond. (call get[Type](tArg2))                              valid  nativez3  src/main/scala/Progress.scala:61:99      0.686 ║
+[  Info  ] ║ subst                   match exhaustiveness                                          valid  nativez3  src/main/scala/Interpreter.scala:352:17  0.053 ║
+[  Info  ] ║ typecheck               match exhaustiveness                                          valid  nativez3  src/main/scala/Typechecker.scala:20:17   0.035 ║
+[  Info  ] ║ typecheck               match exhaustiveness                                          valid  nativez3  src/main/scala/Typechecker.scala:65:33   0.066 ║
+[  Info  ] ╟┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╢
+[  Info  ] ║ total: 26   valid: 26   (0 from cache) invalid: 0    unknown: 0    time:  10.801                                                                      ║
+[  Info  ] ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
