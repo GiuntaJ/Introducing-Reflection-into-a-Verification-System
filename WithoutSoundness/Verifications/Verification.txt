@@ -1,0 +1,81 @@
+﻿Verifications done on the files : Interpreter, Typechecker, Expressions, Types and Identifiers.
+
+[  Info  ]   ┌───────────────────┐
+[  Info  ] ╔═╡ stainless summary ╞═════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+[  Info  ] ║ └───────────────────┘                                                                                                         ║
+[  Info  ] ║ areBothBoolean          match exhaustiveness              valid  nativez3  src/main/scala/Typechecker.scala:144:17   0.201    ║
+[  Info  ] ║ areBothInt              match exhaustiveness              valid  nativez3  src/main/scala/Typechecker.scala:160:17   0.154    ║
+[  Info  ] ║ areBothIntOrReal        match exhaustiveness              valid  nativez3  src/main/scala/Typechecker.scala:177:17   0.253    ║
+[  Info  ] ║ areBothIntOrRealOrChar  match exhaustiveness              valid  nativez3  src/main/scala/Typechecker.scala:195:17   0.028    ║
+[  Info  ] ║ helperArgs              match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:72:49    0.018    ║
+[  Info  ] ║ helperArgs              match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:78:80    0.189    ║
+[  Info  ] ║ helperArgs              match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:82:83    0.152    ║
+[  Info  ] ║ helperBody              match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:90:49    0.016    ║
+[  Info  ] ║ helperNewEnv            match exhaustiveness              valid  nativez3  src/main/scala/Typechecker.scala:53:49    0.023    ║
+[  Info  ] ║ interpret               match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:40:25    0.185    ║
+[  Info  ] ║ isValue                 match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:18:17    0.034    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:57:17    0.088    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:63:59    0.428    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:97:41    0.409    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:113:59   0.570    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:121:48   0.259    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:122:60   0.333    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:127:67   0.102    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:135:49   0.258    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:136:60   0.166    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:141:67   0.047    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:149:43   0.046    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:155:49   0.052    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:156:60   0.050    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:161:67   0.064    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:169:52   0.074    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:170:60   0.041    ║
+[  Info  ] ║ next                    division by zero                  valid  nativez3  src/main/scala/Interpreter.scala:172:88   0.430    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:176:67   0.053    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:185:53   0.072    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:186:60   0.039    ║
+[  Info  ] ║ next                    remainder by zero                 valid  nativez3  src/main/scala/Interpreter.scala:188:88   0.335    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:195:50   0.046    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:196:60   0.041    ║
+[  Info  ] ║ next                    modulo by zero                    valid  nativez3  src/main/scala/Interpreter.scala:198:107  0.166    ║
+[  Info  ] ║ next                    modulo by zero                    valid  nativez3  src/main/scala/Interpreter.scala:199:88   0.064    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:208:56   0.038    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:210:41   0.046    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:218:58   0.041    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:220:41   0.039    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:222:57   0.049    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:234:49   0.051    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:246:52   0.046    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:247:60   0.057    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:252:67   0.035    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:257:57   0.039    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:265:55   0.040    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:266:60   0.070    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:271:67   0.083    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:276:57   0.038    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:284:54   0.050    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:285:60   0.031    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:290:67   0.042    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:295:57   0.031    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:303:57   0.030    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:304:60   0.040    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:309:67   0.044    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:314:57   0.042    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:325:47   0.044    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:328:41   0.044    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:337:46   0.036    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:340:41   0.036    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:349:51   0.035    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:352:41   0.040    ║
+[  Info  ] ║ next                    match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:361:40   0.042    ║
+[  Info  ] ║ subst                   match exhaustiveness              valid  nativez3  src/main/scala/Interpreter.scala:380:17   0.030    ║
+[  Info  ] ║ typecheck               match exhaustiveness              valid  nativez3  src/main/scala/Typechecker.scala:21:17    0.015    ║
+[  Info  ] ║ typecheck               match exhaustiveness              valid  nativez3  src/main/scala/Typechecker.scala:41:45    0.078    ║
+[  Info  ] ║ typecheck               match exhaustiveness              valid  nativez3  src/main/scala/Typechecker.scala:42:41    0.255    ║
+[  Info  ] ║ typecheck               match exhaustiveness              valid  nativez3  src/main/scala/Typechecker.scala:63:33    0.109    ║
+[  Info  ] ║ typecheck               match exhaustiveness              valid  nativez3  src/main/scala/Typechecker.scala:67:64    0.089    ║
+[  Info  ] ║ typecheck               precond. (call get[Type](aType))  valid  nativez3  src/main/scala/Typechecker.scala:67:102   2616.159 ║
+[  Info  ] ║ typecheck               match exhaustiveness              valid  nativez3  src/main/scala/Typechecker.scala:105:33   0.088    ║
+[  Info  ] ╟┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╢
+[  Info  ] ║ total: 73   valid: 73   (0 from cache) invalid: 0    unknown: 0    time: 2623.568                                             ║
+[  Info  ] ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
