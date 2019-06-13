@@ -4,6 +4,10 @@ import Identifiers._
 
 object DSL{
 
+	implicit class WrapperExpr(lhs: Expr){
+		def +(rhs: Expr): Expr = Plus(lhs, rhs)
+	}
+
 	/* Literals */
 
 	/* Chars */
