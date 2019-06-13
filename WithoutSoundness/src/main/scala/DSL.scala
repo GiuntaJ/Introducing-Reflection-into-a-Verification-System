@@ -26,32 +26,4 @@ object DSL{
 		Let(id, tpe, value, body(id))
 	}
 
-	/* General arithmetic */
-
-	def e_+(lhs: Expr, rhs: Expr) = Plus(lhs, rhs)
-	def e_-(lhs: Expr, rhs: Expr) = Minus(lhs, rhs)
-	def u_-(e: Expr) = UMinus(e)
-	def e_*(lhs: Expr, rhs: Expr) = Times(lhs, rhs)
-	def e_/(lhs: Expr, rhs: Expr) = Division(lhs, rhs)
-	def e_%(lhs: Expr, rhs: Expr) = Remainder(lhs, rhs)
-	def e_mod(lhs: Expr, rhs: Expr) = Modulo(lhs, rhs)
-
-	/* String operations */
-
-	def e_++(lhs: Expr, rhs: Expr) = StringConcat(lhs, rhs)
-
-	/* Comparisons */
-
-	def e_==(lhs: Expr, rhs: Expr) = Equals(lhs, rhs)
-	def e_<(lhs: Expr, rhs: Expr) = LessThan(lhs, rhs)
-	def e_>(lhs: Expr, rhs: Expr) = GreaterThan(lhs, rhs)
-	def e_<=(lhs: Expr, rhs: Expr) = LessEquals(lhs, rhs)
-	def e_>=(lhs: Expr, rhs: Expr) = GreaterEquals(lhs, rhs)
-
-	/* Logical operators */
-	
-	def e_&&(lhs: Expr, rhs: Expr) = And(lhs, rhs)
-	def e_||(lhs: Expr, rhs: Expr) = Or(lhs, rhs)
-	def e_==>(lhs: Expr, rhs: Expr) = Implies(lhs, rhs)
-	def e_!(e: Expr) = Not(e)
 }

@@ -25,7 +25,7 @@ class IfExprTest extends FunSuite {
       test("Next steps") {
         	assert(next(IfExpr(B(true), I(0), I(1))) === Some(I(0)))
           assert(next(IfExpr(B(false), I(0), I(1))) === Some(I(1)))
-          assert(next(IfExpr(e_&&(B(true), B(false)), I(0), I(1))) === Some(IfExpr(B(false), I(0), I(1))))
+          assert(next(IfExpr(B(true) && B(false), I(0), I(1))) === Some(IfExpr(B(false), I(0), I(1))))
       }
       test("Problem with interpret") {
         	assert(interpret(IfExpr(I(0), I(0), I(1))).isInstanceOf[ErrorValue])

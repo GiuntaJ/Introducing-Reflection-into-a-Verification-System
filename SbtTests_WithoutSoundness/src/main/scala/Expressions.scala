@@ -6,8 +6,35 @@ import stainless.lang._
 
 object Expressions{
 	abstract class Expr{
+
+		/* General arithmetic */
+
 		def +(rhs: Expr): Expr = Plus(this, rhs)
-		def -(rhs: Expr): Expr = Plus(this, rhs)
+		def -(rhs: Expr): Expr = Minus(this, rhs)
+		def unary_- = UMinus(this)
+		def *(rhs: Expr) = Times(this, rhs)
+		def /(rhs: Expr) = Division(this, rhs)
+		def %(rhs: Expr) = Remainder(this, rhs)
+		def mod(rhs: Expr) = Modulo(this, rhs)
+
+		/* String operations */
+
+		def ++(rhs: Expr) = StringConcat(this, rhs)
+
+		/* Comparisons */
+
+		def ====(rhs: Expr) = Equals(this, rhs)
+		def <(rhs: Expr) = LessThan(this, rhs)
+		def >(rhs: Expr) = GreaterThan(this, rhs)
+		def <=(rhs: Expr) = LessEquals(this, rhs)
+		def >=(rhs: Expr) = GreaterEquals(this, rhs)
+
+		/* Logical operators */
+		
+		def &&(rhs: Expr) = And(this, rhs)
+		def ||(rhs: Expr) = Or(this, rhs)
+		def ==>(rhs: Expr) = Implies(this, rhs)
+		def unary_! = Not(this)
 	}
 
 	/* Errors */
