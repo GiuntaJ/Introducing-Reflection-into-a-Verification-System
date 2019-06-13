@@ -11,9 +11,9 @@ import stainless.lang._
 
 class ArithmeticTest extends FunSuite {
       test("Type checks") {
-        	assert(typecheck(e_+(I(1), I(2)), Map[Identifier, Type]()) === Some(IntegerType()))
+        	assert(typecheck(I(1) + I(2), Map[Identifier, Type]()) === Some(IntegerType()))
           assert(typecheck(e_+(F(1, 1), F(1, 1)), Map[Identifier, Type]()) === Some(RealType()))
-          assert(typecheck(e_-(I(1), I(2)), Map[Identifier, Type]()) === Some(IntegerType()))
+          assert(typecheck(I(1) - I(2), Map[Identifier, Type]()) === Some(IntegerType()))
           assert(typecheck(e_-(F(1, 1), F(1, 1)), Map[Identifier, Type]()) === Some(RealType()))
           assert(typecheck(u_-(I(1)), Map[Identifier, Type]()) === Some(IntegerType()))
           assert(typecheck(u_-(F(1, 1)), Map[Identifier, Type]()) === Some(RealType()))

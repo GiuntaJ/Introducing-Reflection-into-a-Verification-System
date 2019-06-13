@@ -5,7 +5,10 @@ import stainless.collection._
 import stainless.lang._
 
 object Expressions{
-	abstract class Expr
+	abstract class Expr{
+		def +(rhs: Expr): Expr = Plus(this, rhs)
+		def -(rhs: Expr): Expr = Plus(this, rhs)
+	}
 
 	/* Errors */
 	case class ErrorValue(error: String) extends Expr
