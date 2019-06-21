@@ -1,0 +1,134 @@
+﻿Verifications done on the files : Progress, Interpreter, Typechecker, Expressions, Types and Identifiers, 
+when it contains only ErrorValue, Literals (CharLiteral, IntegerLiteral, BooleanLiteral, StringLiteral and FractionLiteral), Variable, Let,
+Comparisons (Equals, LessThan, GreaterThan, LessEquals and GreaterEquals) and Logical operators (And, Or, Implies and Not).
+
+[  Info  ]   ┌───────────────────┐
+[  Info  ] ╔═╡ stainless summary ╞════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+[  Info  ] ║ └───────────────────┘                                                                                                                            ║
+[  Info  ] ║ areBothBoolean          match exhaustiveness                                 valid  nativez3  src/main/scala/Typechecker.scala:145:17  0.015     ║
+[  Info  ] ║ areBothInt              match exhaustiveness                                 valid  nativez3  src/main/scala/Typechecker.scala:161:17  0.014     ║
+[  Info  ] ║ areBothIntOrReal        match exhaustiveness                                 valid  nativez3  src/main/scala/Typechecker.scala:178:17  0.014     ║
+[  Info  ] ║ areBothIntOrRealOrChar  match exhaustiveness                                 valid  nativez3  src/main/scala/Typechecker.scala:196:17  0.014     ║
+[  Info  ] ║ interpret               match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:39:25   0.621     ║
+[  Info  ] ║ isValue                 match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:16:17   0.019     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:56:17   0.176     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:218:52  0.141     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:219:60  0.136     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:224:67  0.174     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:229:57  0.139     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:237:55  0.155     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:238:60  0.143     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:243:67  0.018     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:248:57  0.022     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:256:54  0.022     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:257:60  0.017     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:262:67  0.018     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:267:57  0.020     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:275:57  0.022     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:276:60  0.017     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:281:67  0.015     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:286:57  0.018     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:297:47  0.015     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:300:41  0.020     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:309:46  0.026     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:312:41  0.021     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:321:51  0.022     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:324:41  0.022     ║
+[  Info  ] ║ next                    match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:333:40  0.022     ║
+[  Info  ] ║ progress                postcondition                                        valid  nativez3  src/main/scala/Progress.scala:26:9       12281.193 ║
+[  Info  ] ║ progress                match exhaustiveness                                 valid  nativez3  src/main/scala/Progress.scala:28:17      36.494    ║
+[  Info  ] ║ progress                match exhaustiveness                                 valid  nativez3  src/main/scala/Progress.scala:31:33      0.013     ║
+[  Info  ] ║ progress                precond. (call check(progress(value, tValue)))       valid  nativez3  src/main/scala/Progress.scala:33:51      4445.781  ║
+[  Info  ] ║ progress                precond. (call progress(value, tValue))              valid  nativez3  src/main/scala/Progress.scala:33:57      38.655    ║
+[  Info  ] ║ progress                precond. (call check(res))                           valid  nativez3  src/main/scala/Progress.scala:195:33     40.134    ║
+[  Info  ] ║ progress                match exhaustiveness                                 valid  nativez3  src/main/scala/Progress.scala:196:33     0.030     ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, get[Type](t2))))  valid  nativez3  src/main/scala/Progress.scala:198:73     4495.762  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, get[Type](t2)))         valid  nativez3  src/main/scala/Progress.scala:198:79     38.605    ║
+[  Info  ] ║ progress                precond. (call get[Type](t2))                        valid  nativez3  src/main/scala/Progress.scala:198:93     38.827    ║
+[  Info  ] ║ progress                precond. (call check(progress(lhs, get[Type](t1))))  valid  nativez3  src/main/scala/Progress.scala:199:56     4457.633  ║
+[  Info  ] ║ progress                precond. (call progress(lhs, get[Type](t1)))         valid  nativez3  src/main/scala/Progress.scala:199:62     38.927    ║
+[  Info  ] ║ progress                precond. (call get[Type](t1))                        valid  nativez3  src/main/scala/Progress.scala:199:76     36.384    ║
+[  Info  ] ║ progress                precond. (call check(res))                           valid  nativez3  src/main/scala/Progress.scala:205:33     37.889    ║
+[  Info  ] ║ progress                match exhaustiveness                                 valid  nativez3  src/main/scala/Progress.scala:209:33     0.033     ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, get[Type](t2))))  valid  nativez3  src/main/scala/Progress.scala:213:72     4493.361  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, get[Type](t2)))         valid  nativez3  src/main/scala/Progress.scala:213:78     36.930    ║
+[  Info  ] ║ progress                precond. (call get[Type](t2))                        valid  nativez3  src/main/scala/Progress.scala:213:92     37.722    ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, get[Type](t2))))  valid  nativez3  src/main/scala/Progress.scala:214:73     4460.533  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, get[Type](t2)))         valid  nativez3  src/main/scala/Progress.scala:214:79     36.715    ║
+[  Info  ] ║ progress                precond. (call get[Type](t2))                        valid  nativez3  src/main/scala/Progress.scala:214:93     37.534    ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, get[Type](t2))))  valid  nativez3  src/main/scala/Progress.scala:215:69     4502.922  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, get[Type](t2)))         valid  nativez3  src/main/scala/Progress.scala:215:75     36.989    ║
+[  Info  ] ║ progress                precond. (call get[Type](t2))                        valid  nativez3  src/main/scala/Progress.scala:215:89     37.563    ║
+[  Info  ] ║ progress                precond. (call check(progress(lhs, get[Type](t1))))  valid  nativez3  src/main/scala/Progress.scala:216:56     4505.964  ║
+[  Info  ] ║ progress                precond. (call progress(lhs, get[Type](t1)))         valid  nativez3  src/main/scala/Progress.scala:216:62     36.218    ║
+[  Info  ] ║ progress                precond. (call get[Type](t1))                        valid  nativez3  src/main/scala/Progress.scala:216:76     37.208    ║
+[  Info  ] ║ progress                precond. (call check(res))                           valid  nativez3  src/main/scala/Progress.scala:222:33     37.078    ║
+[  Info  ] ║ progress                match exhaustiveness                                 valid  nativez3  src/main/scala/Progress.scala:226:33     0.034     ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, get[Type](t2))))  valid  nativez3  src/main/scala/Progress.scala:230:72     4449.978  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, get[Type](t2)))         valid  nativez3  src/main/scala/Progress.scala:230:78     36.012    ║
+[  Info  ] ║ progress                precond. (call get[Type](t2))                        valid  nativez3  src/main/scala/Progress.scala:230:92     37.181    ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, get[Type](t2))))  valid  nativez3  src/main/scala/Progress.scala:231:73     4463.734  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, get[Type](t2)))         valid  nativez3  src/main/scala/Progress.scala:231:79     36.016    ║
+[  Info  ] ║ progress                precond. (call get[Type](t2))                        valid  nativez3  src/main/scala/Progress.scala:231:93     37.208    ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, get[Type](t2))))  valid  nativez3  src/main/scala/Progress.scala:232:69     4476.135  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, get[Type](t2)))         valid  nativez3  src/main/scala/Progress.scala:232:75     36.305    ║
+[  Info  ] ║ progress                precond. (call get[Type](t2))                        valid  nativez3  src/main/scala/Progress.scala:232:89     37.238    ║
+[  Info  ] ║ progress                precond. (call check(progress(lhs, get[Type](t1))))  valid  nativez3  src/main/scala/Progress.scala:233:56     4493.750  ║
+[  Info  ] ║ progress                precond. (call progress(lhs, get[Type](t1)))         valid  nativez3  src/main/scala/Progress.scala:233:62     36.634    ║
+[  Info  ] ║ progress                precond. (call get[Type](t1))                        valid  nativez3  src/main/scala/Progress.scala:233:76     37.745    ║
+[  Info  ] ║ progress                precond. (call check(res))                           valid  nativez3  src/main/scala/Progress.scala:239:33     38.019    ║
+[  Info  ] ║ progress                match exhaustiveness                                 valid  nativez3  src/main/scala/Progress.scala:243:33     0.037     ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, get[Type](t2))))  valid  nativez3  src/main/scala/Progress.scala:247:72     4523.903  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, get[Type](t2)))         valid  nativez3  src/main/scala/Progress.scala:247:78     36.346    ║
+[  Info  ] ║ progress                precond. (call get[Type](t2))                        valid  nativez3  src/main/scala/Progress.scala:247:92     37.627    ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, get[Type](t2))))  valid  nativez3  src/main/scala/Progress.scala:248:73     4512.741  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, get[Type](t2)))         valid  nativez3  src/main/scala/Progress.scala:248:79     36.465    ║
+[  Info  ] ║ progress                precond. (call get[Type](t2))                        valid  nativez3  src/main/scala/Progress.scala:248:93     37.228    ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, get[Type](t2))))  valid  nativez3  src/main/scala/Progress.scala:249:69     4540.012  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, get[Type](t2)))         valid  nativez3  src/main/scala/Progress.scala:249:75     36.847    ║
+[  Info  ] ║ progress                precond. (call get[Type](t2))                        valid  nativez3  src/main/scala/Progress.scala:249:89     37.193    ║
+[  Info  ] ║ progress                precond. (call check(progress(lhs, get[Type](t1))))  valid  nativez3  src/main/scala/Progress.scala:250:56     4533.282  ║
+[  Info  ] ║ progress                precond. (call progress(lhs, get[Type](t1)))         valid  nativez3  src/main/scala/Progress.scala:250:62     36.089    ║
+[  Info  ] ║ progress                precond. (call get[Type](t1))                        valid  nativez3  src/main/scala/Progress.scala:250:76     37.120    ║
+[  Info  ] ║ progress                precond. (call check(res))                           valid  nativez3  src/main/scala/Progress.scala:256:33     37.286    ║
+[  Info  ] ║ progress                match exhaustiveness                                 valid  nativez3  src/main/scala/Progress.scala:260:33     0.033     ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, get[Type](t2))))  valid  nativez3  src/main/scala/Progress.scala:264:72     4484.786  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, get[Type](t2)))         valid  nativez3  src/main/scala/Progress.scala:264:78     35.760    ║
+[  Info  ] ║ progress                precond. (call get[Type](t2))                        valid  nativez3  src/main/scala/Progress.scala:264:92     36.688    ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, get[Type](t2))))  valid  nativez3  src/main/scala/Progress.scala:265:73     4476.096  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, get[Type](t2)))         valid  nativez3  src/main/scala/Progress.scala:265:79     35.695    ║
+[  Info  ] ║ progress                precond. (call get[Type](t2))                        valid  nativez3  src/main/scala/Progress.scala:265:93     37.000    ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, get[Type](t2))))  valid  nativez3  src/main/scala/Progress.scala:266:69     4462.621  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, get[Type](t2)))         valid  nativez3  src/main/scala/Progress.scala:266:75     35.992    ║
+[  Info  ] ║ progress                precond. (call get[Type](t2))                        valid  nativez3  src/main/scala/Progress.scala:266:89     37.141    ║
+[  Info  ] ║ progress                precond. (call check(progress(lhs, get[Type](t1))))  valid  nativez3  src/main/scala/Progress.scala:267:56     4528.307  ║
+[  Info  ] ║ progress                precond. (call progress(lhs, get[Type](t1)))         valid  nativez3  src/main/scala/Progress.scala:267:62     36.757    ║
+[  Info  ] ║ progress                precond. (call get[Type](t1))                        valid  nativez3  src/main/scala/Progress.scala:267:76     37.498    ║
+[  Info  ] ║ progress                precond. (call check(res))                           valid  nativez3  src/main/scala/Progress.scala:273:33     37.597    ║
+[  Info  ] ║ progress                match exhaustiveness                                 valid  nativez3  src/main/scala/Progress.scala:276:33     0.032     ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, t)))              valid  nativez3  src/main/scala/Progress.scala:279:75     4521.057  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, t))                     valid  nativez3  src/main/scala/Progress.scala:279:81     36.279    ║
+[  Info  ] ║ progress                precond. (call check(progress(lhs, t)))              valid  nativez3  src/main/scala/Progress.scala:280:56     4545.779  ║
+[  Info  ] ║ progress                precond. (call progress(lhs, t))                     valid  nativez3  src/main/scala/Progress.scala:280:62     36.237    ║
+[  Info  ] ║ progress                precond. (call check(res))                           valid  nativez3  src/main/scala/Progress.scala:284:33     37.667    ║
+[  Info  ] ║ progress                match exhaustiveness                                 valid  nativez3  src/main/scala/Progress.scala:287:33     0.041     ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, t)))              valid  nativez3  src/main/scala/Progress.scala:290:76     4493.965  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, t))                     valid  nativez3  src/main/scala/Progress.scala:290:82     36.621    ║
+[  Info  ] ║ progress                precond. (call check(progress(lhs, t)))              valid  nativez3  src/main/scala/Progress.scala:291:56     4518.090  ║
+[  Info  ] ║ progress                precond. (call progress(lhs, t))                     valid  nativez3  src/main/scala/Progress.scala:291:62     36.169    ║
+[  Info  ] ║ progress                precond. (call check(res))                           valid  nativez3  src/main/scala/Progress.scala:295:33     37.351    ║
+[  Info  ] ║ progress                match exhaustiveness                                 valid  nativez3  src/main/scala/Progress.scala:298:33     0.032     ║
+[  Info  ] ║ progress                precond. (call check(progress(rhs, t)))              valid  nativez3  src/main/scala/Progress.scala:301:75     4456.905  ║
+[  Info  ] ║ progress                precond. (call progress(rhs, t))                     valid  nativez3  src/main/scala/Progress.scala:301:81     36.119    ║
+[  Info  ] ║ progress                precond. (call check(progress(lhs, t)))              valid  nativez3  src/main/scala/Progress.scala:302:56     3005.746  ║
+[  Info  ] ║ progress                precond. (call progress(lhs, t))                     valid  nativez3  src/main/scala/Progress.scala:302:62     36.562    ║
+[  Info  ] ║ progress                precond. (call check(res))                           valid  nativez3  src/main/scala/Progress.scala:306:33     36.953    ║
+[  Info  ] ║ progress                match exhaustiveness                                 valid  nativez3  src/main/scala/Progress.scala:308:33     0.031     ║
+[  Info  ] ║ progress                precond. (call check(progress(e, t)))                valid  nativez3  src/main/scala/Progress.scala:310:53     2975.191  ║
+[  Info  ] ║ progress                precond. (call progress(e, t))                       valid  nativez3  src/main/scala/Progress.scala:310:59     36.328    ║
+[  Info  ] ║ subst                   match exhaustiveness                                 valid  nativez3  src/main/scala/Interpreter.scala:352:17  0.018     ║
+[  Info  ] ║ typecheck               match exhaustiveness                                 valid  nativez3  src/main/scala/Typechecker.scala:20:17   0.021     ║
+[  Info  ] ║ typecheck               match exhaustiveness                                 valid  nativez3  src/main/scala/Typechecker.scala:106:33  0.013     ║
+[  Info  ] ╟┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╢
+[  Info  ] ║ total: 124  valid: 124  (0 from cache) invalid: 0    unknown: 0    time: 128108.538                                                              ║
+[  Info  ] ╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
